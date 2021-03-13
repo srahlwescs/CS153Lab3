@@ -3,9 +3,9 @@
 
 //Prevent this function from being optimized, which might give it closed form
 #pragma GCC push_options
-#pragma GCC optimize("O0")
+#pragma GCC optimize ("O0")
 static int 
-recurs(int n)
+recurse(int n)
 {
  if(n == 0)
   return 0;
@@ -17,6 +17,7 @@ int
 main(int argc, char *argv[])
 {
  int n, m;
+ printf(1,"%p\n",&argc);
 
  if(argc != 2)
   {
